@@ -1,0 +1,119 @@
+:root {
+    --color-principal: #ed254e;
+    --color-hover: #ff66d8;
+    --color-fuentes: #2b2d42;
+    --color-fondo: #efd9ce;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+a {
+    text-decoration: none;
+    color: var(--color-fuentes);
+}
+a:hover:not(#cart, #titulo){
+    color: var(--color-hover);
+}
+#titulo {
+    font-size: 22px;
+    color: black;
+}
+header{
+    box-shadow: 0 5px var(--color-principal);
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 60px;
+}
+header nav div {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+}
+#logo {
+    height: 70px;
+}
+header nav img{
+    height: 25px;
+}
+
+#cuenta-carrito {
+    background-color: var(--color-principal) ;
+    border-radius: 100%;
+    display: inline-block;
+    width: 20px;
+    line-height: 20px;
+    aspect-ratio: 1;
+    text-align: center;
+    position: absolute;
+}
+footer{
+    margin-top: auto;
+    box-shadow: 0 -5px var(--color-principal);
+    text-align: center;
+}
+.logos-redes{
+width: 30px;
+border-radius: 100%;
+}
+#productos-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* max-width: 900px; */
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 25px;
+
+}
+.tarjeta-producto {
+    max-width: 200px;
+    background-color: var(--color-fondo);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 0 5px var(--color-principal);
+    transition: 400ms;
+}
+.tarjeta-producto:hover{
+    translate:  0 -10px;
+    box-shadow: 0 10px var(--color-principal);
+}
+.tarjeta-producto img {
+    width: 100%;
+    border-radius: 3px;
+}
+.tarjeta-producto h3 {
+    margin-bottom: 1px;
+    font-size: 16px;
+}
+.tarjeta-producto p {
+    color: blue;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+.tarjeta-producto button {
+    background-color: var(--color-principal);
+    margin-bottom: 5px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+.tarjeta-producto button:hover {
+   background-color: var(--color-hover);
+}
+
+.esconder {
+    display: none;
+}
